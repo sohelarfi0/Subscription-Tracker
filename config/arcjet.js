@@ -38,7 +38,7 @@ const aj = arcjet({
 });
 
 
-
+export default aj;
 // app.get("/", async (req, res) => {
 //   const decision = await aj.protect(req, { requested: 5 }); // Deduct 5 tokens from the bucket
 //   console.log("Arcjet decision", decision);
