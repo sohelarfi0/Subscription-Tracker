@@ -7,4 +7,10 @@ export default defineConfig([
   { files: ["**/*.{js,mjs,cjs,jsx}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser, sourceType: "module" } },
   { files: ["**/*.js"], languageOptions: { sourceType: "script" } },
   pluginReact.configs.flat.recommended,
-]);
+],{
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  }
+}
+);
